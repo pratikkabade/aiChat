@@ -1,0 +1,256 @@
+html,
+body {
+  background: var(--background1);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#hrtLogo {
+  box-shadow: var(--shadowsmall);
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.App header {
+  background-color: rgba(234, 249, 255, 0.6) !important;
+  backdrop-filter: blur(5px);
+  height: 70px;
+  color: rgb(83, 73, 73);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+main {
+  padding: 100px 20px 0 20px;
+  height: 80vh !important;
+  margin: 0px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--accent);
+}
+
+@media screen and (min-height: 950px) {
+  main {
+    height: 82vh !important;
+  }
+}
+
+
+@media screen and (max-height: 820px) {
+  main {
+    height: 78vh !important;
+  }
+}
+
+@media screen and (max-height: 720px) {
+  main {
+    height: 75vh !important;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  main {
+    height: 73vh !important;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  main {
+    height: 69vh !important;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  main {
+    height: 67vh !important;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  main {
+    height: 65vh !important;
+  }
+}
+
+
+
+main::-webkit-scrollbar {
+  width: 8px;
+}
+
+main::-webkit-scrollbar-track {
+  background-color: var(--accentbackgorund);
+}
+
+
+form {
+  height: 6vh;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--mainbackgorund);
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  padding: 0 0px 7px 0;
+}
+
+form button {
+  width: 200px;
+}
+
+
+textarea {
+  width: 100%;
+  font-size: 20px;
+  background: var(--mainbackgorund);
+  color: black;
+  outline: none;
+  border: none;
+  padding: 12px 10px 0px 15px;
+  border-radius: 20px;
+  margin: 0 20px 0 20px;
+  border: 1px solid #0b93f6;
+  resize: none;
+}
+
+textarea:focus {
+  border-radius: 20px;
+  box-shadow: var(--shadowtiny);
+}
+
+button {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+  background-color: var(--accent);
+}
+
+button:disabled {
+  background-color: var(--accent);
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  box-shadow: 0 1px 10px rgba(177, 7, 50, 0.781);
+  cursor: not-allowed;
+  border-radius: 30px;
+}
+
+button:hover {
+  filter: brightness(1.2);
+  box-shadow: var(--shadowsmall);
+  transition: 0.3s;
+  border-radius: 40px;
+}
+
+.sendButton {
+  font-size: 30px;
+  border-radius: 30px;
+  width: 120px;
+  margin: 0px
+}
+
+.sign-in {
+  color: var(--white);
+  background: var(--accent);
+  max-width: 400px;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.sign-out {
+  background: hsl(0, 97%, 60%);
+  font-weight: 700;
+  backdrop-filter: blur(0px) !important;
+}
+
+.sign-out:hover {
+  box-shadow: 0 1px 10px rgba(177, 7, 50, 0.781);
+}
+
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+.pTag {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+  user-select: text;
+  font-size: 20px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent .pTag {
+  color: white;
+  background: var(--accent);
+  align-self: flex-end;
+  text-align: right;
+}
+
+.received .pTag {
+  background: var(--accentdim4);
+  box-shadow: var(--shadowtiny);
+  color: black;
+  text-align: left;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}

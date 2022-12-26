@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel='icon' href='https://raw.githubusercontent.com/dependabot-pr/Static-Files/main/Assets/Logo/AI.svg' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chat</title>
+  <link rel='stylesheet' href='https://cdn.statically.io/gh/dependabot-pr/Static-Files/main/style.css' />
+  <link rel='stylesheet' href='https://cdn.statically.io/gh/dependabot-pr/Static-Files/main/animation.css' />
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <div class="App">
+    <header>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <div class='header-content'>
+              <img alt='a' id='hrtLogo'
+                src='https://raw.githubusercontent.com/dependabot-pr/Static-Files/main/Assets/Logo/AI.svg'
+                draggable='false' />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div id="app">
+      <div id="chat_container"></div>
+    </div>
+  </main>
+
+</body>
+<form>
+  <textarea name="prompt" rows="1" cols="1" placeholder="Ask AI..."></textarea>
+  <button type="submit" class="sendButton">Send</button>
+</form>
+
+<script type="module" src="./src/script.js"></script>
+
+</html>
