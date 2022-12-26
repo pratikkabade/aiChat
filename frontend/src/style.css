@@ -24,7 +24,7 @@ body {
 .App header {
   background-color: rgba(234, 249, 255, 0.6) !important;
   backdrop-filter: blur(5px);
-  height: 70px;
+  height: 9vh;
   color: rgb(83, 73, 73);
   position: fixed;
   width: 100%;
@@ -47,8 +47,8 @@ body {
 }
 
 main {
-  padding: 100px 20px 0 20px;
-  height: 80vh !important;
+  padding: 10vh 20px 0 20px;
+  height: 75vh;
   margin: 0px;
   overflow-y: scroll;
   display: flex;
@@ -56,50 +56,11 @@ main {
   border-bottom: 1px solid var(--accent);
 }
 
-@media screen and (min-height: 950px) {
+@media screen and (min-width: 800px) {
   main {
-    height: 82vh !important;
+    height: 80vh;
   }
 }
-
-
-@media screen and (max-height: 820px) {
-  main {
-    height: 78vh !important;
-  }
-}
-
-@media screen and (max-height: 720px) {
-  main {
-    height: 75vh !important;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  main {
-    height: 73vh !important;
-  }
-}
-
-@media screen and (max-height: 550px) {
-  main {
-    height: 69vh !important;
-  }
-}
-
-@media screen and (max-height: 500px) {
-  main {
-    height: 67vh !important;
-  }
-}
-
-@media screen and (max-height: 450px) {
-  main {
-    height: 65vh !important;
-  }
-}
-
-
 
 main::-webkit-scrollbar {
   width: 8px;
