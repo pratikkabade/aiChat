@@ -1,6 +1,7 @@
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
 const URL = 'https://aichat.onrender.com/'
+const header = document.querySelector('header')
 
 let loadInterval
 
@@ -113,3 +114,7 @@ form.addEventListener('keyup', (e) => {
 
 // to focus on the textarea input
 form.prompt.focus()
+
+header.addEventListener('click', () => {
+    form.prompt.focus()
+})
